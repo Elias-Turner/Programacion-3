@@ -1,5 +1,6 @@
 %% --- BASE DE DATOS DE PELÍCULAS (Mantenido en Prolog) ---
 
+
 movie('Star Wars', ['sci-fi','adventure']).
 movie('The Expanse', ['sci-fi','drama']).
 movie('Interstellar', ['sci-fi','drama']).
