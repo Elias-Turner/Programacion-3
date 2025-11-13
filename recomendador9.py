@@ -161,10 +161,10 @@ class Recomendador:
 # -----------------------
 # Interfaz gráfica (Netflix-like)
 # -----------------------
-class HasklixGUI:
+class HaskflixGUI:
     def __init__(self, root):
         self.root = root
-        self.root.title("Hasklix - Redflix")
+        self.root.title("Haskflix - Redflix")
         self.root.geometry("900x700")
         self.root.configure(bg="black")
         self.recomendador = Recomendador()
@@ -186,7 +186,7 @@ class HasklixGUI:
     def login_screen(self):
         self.clear()
         # Header
-        tk.Label(self.root, text="Hasklix", font=("Helvetica", 42, "bold"), fg="red", bg="black").pack(pady=20)
+        tk.Label(self.root, text="Haskflix", font=("Helvetica", 42, "bold"), fg="red", bg="black").pack(pady=20)
         frame = tk.Frame(self.root, bg="black")
         frame.pack(pady=10)
 
@@ -385,5 +385,5 @@ if __name__ == "__main__":
     if not os.path.exists(archivoPeliculas):
         print(f"AVISO: No se encontró '{archivoPeliculas}'. Crea el archivo Prolog con películas y series y las reglas recommend/.. y recommend_serie/..")
     root = tk.Tk()
-    app = HasklixGUI(root)
+    app = HaskflixGUI(root)
     root.mainloop()
